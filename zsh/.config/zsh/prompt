@@ -1,0 +1,104 @@
+#!/bin/zsh
+#                                                                .   
+#                                                              .o8   
+# oo.ooooo.  oooo d8b  .ooooo.  ooo. .oo.  .oo.   oo.ooooo.  .o888oo 
+#  888' `88b `888""8P d88' `88b `888P"Y88bP"Y88b   888' `88b   888   
+#  888   888  888     888   888  888   888   888   888   888   888   
+#  888   888  888     888   888  888   888   888   888   888   888 . 
+#  888bod8P' d888b    `Y8bod8P' o888o o888o o888o  888bod8P'   "888" 
+#  888                                             888               
+# o888o                                           o888o              
+
+# Git Info #########################################################################################
+
+    autoload -Uz vcs_info
+    autoload -U colors && colors
+    precmd() { vcs_info }
+
+    # Show untracked files in repo
+    +vi-git-untracked(){
+        if [[ $(git rev-parse --is-inside-work-tree 2> /dev/null) == 'true' ]] && \
+            git status --porcelain | grep '??' &> /dev/null ; then
+            hook_com[staged]+='%B%F{green}  %f%b' # signify new files with a bang
+        fi
+    }
+    
+    zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
+    zstyle ':vcs_info:*' check-for-changes true
+    zstyle ':vcs_info:*' unstagedstr '%{%F{red}%}  %{%f%}'
+    zstyle ':vcs_info:*' stagedstr '%B%{%F{blue}%}  %{%f%}%b'
+    zstyle ':vcs_info:git*' formats "– %{$fg_bold[yellow]%} %{$reset_color%}%{$fg[magenta]%}%b %m%c%u%a"
+
+    setopt PROMPT_SUBST
+
+# Prompt ###########################################################################################
+
+    # Randomize icon:  異  ﬌         ﲵ    ﮸  黎 ⚡   
+    ICON=(異      ﲵ     黎   ) 
+
+    function random_icon {
+      echo -n "$ICON[$RANDOM%$#ICON+1]"
+    }
+
+    PICON="$(random_icon) "
+
+    NEWLINE=$'\n'
+    PROMPT='${NEWLINE}%B%F{cyan} %4~ %f%b${vcs_info_msg_0_}${NEWLINE}%(?.%B%F{yellow}${PICON} %b.%F{red}${PICON}  )%f' 
+
+
+
+
+
+print_long_command_duration_preexec() {
+    _date_start=${(%):-%D{%s}}
+}
+[[ -z "$preexec_functions" ]] && preexec_functions=()
+preexec_functions+=(print_long_command_duration_preexec)
+
+print_long_command_duration_precmd() {
+    _date_end=${(%):-%D{%s}}
+    pretty_print_date_difference "$_date_end" "${_date_start:-$_date_end}"
+    unset _date_start
+    unset _date_end
+}
+[[ -z "$precmd_functions" ]] && precmd_functions=()
+precmd_functions+=(print_long_command_duration_precmd)
+
+pretty_print_date_difference() {
+    setopt LOCAL_OPTIONS NO_FORCE_FLOAT NO_C_PRECEDENCES &>/dev/null  # Old zsh does not have FORCE_FLOAT
+    local date_end="$1"
+    local date_start="$2"
+    (( date_end - date_start < 3 )) && return
+    if ( date --version 2>&1; true; ) | grep -q -e GNU -e BusyBox; then
+        local date_start_iso="$(date -u -d @"$date_start" +%FT%TZ)"
+        local date_end_iso="$(date -u -d @"$date_end" +%FT%TZ)"
+        local date_start_local="$(date -d @"$date_start" '+%F %T')"
+        local date_end_local="$(date -d @"$date_end" '+%F %T')"
+    else
+        local date_start_iso="$(date -u -r "$date_start" +%FT%TZ)"
+        local date_end_iso="$(date -u -r "$date_end" +%FT%TZ)"
+        local date_start_local="$(date -r "$date_start" '+%F %T')"
+        local date_end_local="$(date -r "$date_end" '+%F %T')"
+    fi
+    local wall_time
+    local d=$(( (date_end - date_start) / 86400 ))
+    local h=$(( (date_end - date_start) % 86400 / 3600 ))
+    local m=$(( (date_end - date_start) % 86400 % 3600 / 60 ))
+    local s=$(( (date_end - date_start) % 86400 % 3600 % 60 ))
+    if [[ "$d" -gt 0 ]]; then
+        wall_time="$(printf '%dd %.02d:%.02d:%.02d' "$d" "$h" "$m" "$s")"
+    else
+        wall_time="$(printf '%.02d:%.02d:%.02d' "$h" "$m" "$s")"
+    fi
+    {
+        local local_time_zone="$(date +%Z)"
+        if [[ "$local_time_zone" = UTC ]]; then
+            echo "Wall time: $wall_time\tStart: $date_start_iso\tStop: $date_end_iso"
+        else
+            local wall_time_prefix="$fg_bold[blue]Took: $wall_time"
+            local local_time_prefix="${(l(${#wall_time_prefix})( )):-Local time ($local_time_zone)}"
+            echo "$wall_time_prefix" # \tStart: $date_start_iso\tStop: $date_end_iso"
+            # echo "$local_time_prefix\t     : $date_start_local\t    : $date_end_local"
+        fi
+    } | if command -v column &>/dev/null; then column -t -s $'\t'; else cat; fi
+}

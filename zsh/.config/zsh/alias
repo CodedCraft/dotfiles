@@ -1,0 +1,64 @@
+#!/bin/zsh
+#           oooo   o8o
+#           `888   `"'
+#  .oooo.    888  oooo   .oooo.    .oooo.o
+# `P  )88b   888  `888  `P  )88b  d88(  "8
+#  .oP"888   888   888   .oP"888  `"Y88b.
+# d8(  888   888   888  d8(  888  o.  )88b
+# `Y888""8o o888o o888o `Y888""8o 8""888P'
+
+# General --------------------------------------------------------------------------------------
+    alias pwgen='pwgen -1cnsy 20 | pbcopy && echo "Generated Password and copied to clipboard"'
+    alias wt="curl wttr.in/Bernhardzell"
+    alias zs='source $HOME/.config/zsh/.zshrc'
+    alias v='nvim'
+    alias vim='nvim'
+    alias J='v "$HOME/LifeAreas/WrittenDocs/Journal/journal.md" +1'
+    alias rm='rm -ri'
+    alias del='trash'
+    alias dotfiles='/usr/bin/git --git-dir=$HOME/.config/dotfiles/ --work-tree=$HOME' #Command for Git Bare Repository for dotfiles
+    alias c='clear'
+
+# Tmux -----------------------------------------------------------------------------------------
+    alias t="tmux"
+    alias ta="t a"
+    alias td="t detach"
+    alias tls="t ls"
+    alias tn="t new -t"
+
+# LSD ------------------------------------------------------------------------------------------
+    alias l='lsd -F --group-dirs first'
+    alias la='l -a'
+    alias ll='l -l'
+    alias lla='l -la'
+    alias lt='l --tree'
+
+function ls()
+{
+    if [ "$PWD" = "$HOME" ]
+    then
+        l -I{.DS_Store,.CFUserTextEncoding,Applications,Application\ Support,Desktop,Documents,Downloads,Library,Movies,Music,Pictures,Public}
+    else
+        l
+    fi
+}
+export god
+# function los ()
+#     if [ "$PWD" == "/Users/philip" ]; then
+#        la
+#     else
+#        l
+
+# Password Store -------------------------------------------------------------------------------
+    alias pw='pass pass-fzf'
+
+# Git ------------------------------------------------------------------------------------------
+    alias gs='git status'
+    alias gc='git add -A; git commit -m'
+
+# Zoxide ------------------------------------------------------------------------------------------
+    alias j='z'
+    alias jd='z Downloads'
+    alias zd='z Downloads'
+
+

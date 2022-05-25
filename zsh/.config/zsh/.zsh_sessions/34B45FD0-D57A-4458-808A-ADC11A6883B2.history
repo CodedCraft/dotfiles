@@ -1,0 +1,1252 @@
+pyenv uninstall 3.10.1
+env PATH="$(brew --prefix tcl-tk)/bin:$PATH" LDFLAGS="-L$(brew --prefix tcl-tk)/lib" CPPFLAGS="-I$(brew --prefix tcl-tk)/include" PKG_CONFIG_PATH="$(brew --prefix tcl-tk)/lib/pkgconfig" CFLAGS="-I$(brew --prefix tcl-tk)/include" PYTHON_CONFIGURE_OPTS="--with-tcltk-includes='-I$(brew --prefix tcl-tk)/include' --with-tcltk-libs='-L$(brew --prefix tcl-tk)/lib -ltcl8.6 -ltk8.6'" pyenv install 3.10.2
+export LDFLAGS="-L/usr/local/opt/tcl-tk/lib"
+export CPPFLAGS="-I/usr/local/opt/tcl-tk/include"
+export PKG_CONFIG_PATH="/usr/local/opt/tcl-tk/lib/pkgconfig"\
+
+python -m tkinter -c "tkinter._test()"
+pyenv global 3.10.2
+clear
+vim README.md main.py
+mkdir PythonApps
+cd PythonApps
+touch odd.py
+cd Desktop/PythonApps
+pip install pysimplegui
+cd -- LifeAreas/Dev/Learning\ Resources/BluetoothMesh/Nordic-Semiconductor-Files/nordic-SDK5/nRF5SDK160098a08e2/examples/nfc/record_url
+cd -- MyFiles/LifeAreas/Dev/Learning\ Resources
+cd HeadfirstPython
+cd MyFiles
+vim odd.py
+python odd.py
+echo bye
+vim kitty.con
+j
+vim vowels.py
+python vowels.py
+pip install Pillow
+sudo rm -fr Public
+cd SetupScript
+cd SetupFiles
+vim BloatRemoval
+cd /Volumes
+/dev/
+cd /dev/
+j nvun
+vim panic.py
+python panic.py
+vim panic2.py
+python panic2.py
+vim countdown.py
+python countdown.py
+brew outdated
+brew outdated --csk
+brew outdated --cask
+brew search prusaslicer
+brew install prusaslicer
+vim vowels2.py
+python vowels2.py
+j pomodo
+python pomodoroExample.py
+touch buttontest.py
+vim buttontest.py
+python buttontest.py
+python gui.p
+vim buttontest2.py
+python buttontest2.py
+rm zshenv
+echo XDG_CONFIG_DIR
+echo PASSWORD_STORE_DIR
+echo $XDG_CONFIG_DIR
+mv .password-store ./config/password-store
+mv .password-store .config/password-store
+cd password-store
+cd ~/Documents
+ls -l Fusion\ 360
+vim vsearch.py
+python vsearch.py
+pip install flask
+vim hello_flask.py
+python hello_flask.py
+brew info neovim --HEAD
+brew search neovim
+brew info --HEAD neovim
+brew unlink neovim
+nvim --version
+source ./.zshenv
+echo $PASSWORD_STORE_DIR
+pass add web/recruitingapp-2800.umantis.com
+cd LifeAreas/Dev/Learning\ Resources/HeadfirstPython
+brew search pomodoro
+brew install taskwarrior-pomodoro
+brew remove taskwarrior-pomodoro
+vim entry.html
+vim results.html
+mv hello_flask.py vsearch4web.py
+mkdir static
+vim hf.css
+mkdir templates
+mv results.html entry.html base.html ./templates
+vim base.html
+mv templates templates2
+mv ~/Downloads/webapp/templates ./\
+
+grep html vsearch4web.py
+grep -nC 2html vsearch4web.py
+grep -nC 2 html vsearch4web.py
+du Move\ to\ External
+du -m Move\ to\ External
+du -mh Move\ to\ External
+du -mh | sort -h
+du -mh | sort -h | tail 3
+du -mh | sort -h | tail
+du -mh | sort -rh | tail
+df
+df -h
+man df
+history
+du
+history | less
+ps
+ps axz
+ps ax
+ps ax | less
+ps ax | vim
+ps ax | wc
+top
+top -o mem
+cd LifeAreas/Dev/Projects/PomodoroTimer
+vim README.md
+rm todo.txt
+j pomodoro
+vim vsearch.log
+mv main.py mainOLD.py
+mv main.py pomodoroTimer.py
+mv gui.py guiOld.py
+cp gui.py guiGeek.py
+pip install playsound
+python gui.py
+rm gui.py guiGeek.py
+vim pomodoroTimer.py
+vim gui.py
+main.py
+vim main.py
+python main.py
+rm index.html
+mkdir templates static static/css
+touch index.html
+echo '<!DOCTYPE hmtl>' >> index.html
+mv index.html ./../templates
+python
+python vsearch4web.py
+cd ../templates2
+rm -rf templates2
+touch viewlog.html
+rm vsearch.log
+pass add web/cults3d.com
+pass edit web/cults3d.com
+brew install --HEAD neovim
+brew reinstall --HEAD neovim
+brew reinstall neovim
+vim shade.lua
+cd plugin
+cd ../lua
+vim lspconfig.lua
+touch nvim-lsp-installer.lua
+vim nvim-lsp-installer.lua
+cd ../templates
+vim index.html
+brew install chrome
+brew install google-chrome
+cd Settings
+cd Autocommands
+touch colorSchemes.lua
+g
+soul
+zd
+jd
+lsd --group-dirs first -A
+z zsh
+source ./alias
+ll
+lla
+tmux new-window
+kitty +kitten show_key -m kitty
+kitty --debug-input
+tmux list-sessions
+tmux new-session
+brew search gyroflow
+tmutty(0.24.4)x
+t
+c
+"/Volumes/Photoshop 23.2.2 U2B [RiD]/patch.tool"
+pass add web/hearingtracker.com
+pass edit web/hearingtracker.com
+brew reinstall brave-browser
+pwgen
+pass add web/purefill.ch
+pass edit web/purefill.ch
+pass mv web/purefill.ch web/purefil.ch
+pass edit web/purefil.ch
+pass rm web/CSX
+pass rm web/CSX2
+pass rm web/CSX2436330\
+
+pass mv web/CSX2436330 web/CSX\
+
+brew uninstall --force neovim
+brew info neovim
+\:q
+j kitty.conf
+mv kitty.conf ~/Desktop/kitty.conf
+brew reinstall kitty
+mv ~/Desktop/kitty.conf ./kitty.conf
+brew search cura
+j Desktop
+git clone https://github.com/juliendorra/3D-printable-sound-absorbers.git
+cd 3D-printable-sound-absorbers
+j pythonhead
+j learn
+cd LifeAreas/Dev/Learning\ Resources/HeadfirstPython/
+cd static
+cd templates
+vim viewlog.html
+python3 vsearch4web.py
+vim vsearch4web.py
+cd lua/Plugins/Config
+mv plugins.lua plugins2.lua
+vim plu
+j plugin
+vim plugins2.lua
+mv plugins2.lua ~/Desktop/plugins.lua
+cd Config
+vim lualine.lua
+git clone https://github.com/50an6xy06r6n/hotswap_pcb_generator.git
+cd script
+npm install
+j Downloads
+cd hotswap_pcb_generator
+cd scad
+brew install openscad
+rm layout.scad
+npm start -- ~/Downloads/keyboard-layout.json
+open layout.scad
+open pcb.scad
+brew info mysql
+brew install mysql
+brew search mysql-connector
+brew install mysql-connector-python
+mysql
+mysqladmin -u root -p status\
+
+\
+service mysqld start
+brew service mysld start
+brew search mysql-server
+brew search mysql
+brew services start mysql
+j headfirst
+mysql -u root -p
+mysql -u vsearch -p vsearchlogDB
+cd LifeAreas
+cd Projects
+cd Keyboard
+rm -rf cyber60
+mv zmk zmk5340
+git clone https://github.com/zmkfirmware/zmk.git
+rm -rf zmk-config
+bash -c "$(curl -fsSL https://zmk.dev/setup.sh)"
+cd appp
+cd nice_nano
+cd app/boards/shields
+west init -l app/
+west update
+west build -b nice_nano -- -DSHIELD=tg4x
+west flash
+cd build
+exir
+cd shields
+mkdir PLANCKxHHKB
+cd tg4x
+c ..
+cp * ../PLANCKxHHKB
+cd ../tg4x
+cp -r boards ../PLANCKxHHKB
+cd ../PLANCKxHHKB
+vim nice_nano.conf
+vim nice_nano.overlay
+mv PLANCKxHHKB planck
+mv tg4x.conf planck.conf
+mv tg4x.keymap planck.keymap
+mv tg4x.overlay planck.overlay
+mv tg4x.zmk.yml planck.zmk.yml
+vim Kconfig.defconfig
+vim Kconfig.shield
+vim planck.zmk.yml
+cd arm
+cd planck
+vim planck_rev6.dts
+cd planck_rev6.keymap
+vim planck_rev6.keymap
+cd ../../shields/planck
+mv boards ~/.Trash
+mv planck.zmk.yml ~/.Trash
+cd app/build
+cd zephyr
+lka
+cd boards
+cd zep
+cd app/
+cd app/build/zephyr
+vim planck.overlay
+opfeu'\
+qwr'
+cd bat43
+vim bat43.keymap
+brew update && brew upgrade --greedy
+brew search pinentry
+brew reinstall pinentry pinentry-mac
+pw
+j zmk
+cd app/boards/shields/planck
+vim planck.conf
+cd app
+west build -p -b nice_nano -- -DSHIELD=planckpppppppppoooooooooooooooooop'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''\
+\
+\
+\
+\
+\
+\
+'
+'\
+'''''''
+echo hello
+abbcccdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddeeeeeeeeeeeeeeeeeeeeeeeeeeefffffffhhffhhhjjjjjjjjjjjjjiyyyyiuuuuuuuuuuuuuuuuuuuhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhmhhhhhhhhhhhabcdefhhhhjjkluiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiuhhjjjhiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiijjjkkllllllzxcvbnm,.\\\\ 
+j build/zephyr
+west build -p -b nice_nano -- -DSHIELD=planck
+west build -p -b nice_nano -- -DSHIELD=planck && cp ./zmk.uf2 /Volumes/NICENANO\
+
+qwweqwertyuuiiiooopppaaaa'''asdfghjkl;';
+asdfghjkllkl;'
+hellojsdfjl ggaaazzzzzzzxxxxccccvvvvvbbbbbbbbmmmm,,,,....\\\\ 
+\\\\ 
+\\...
+\,
+cp ./zmk.uf2 /Volumes/NICENANO
+cp ./build/zephyr/zmk.uf2 /Volumes/
+quzzzz
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.DiskArbitration.diskarbitrationd.plist DADisableEjectNotification -bool YES && sudo pkill diskarbitrationd\
+
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.DiskArbitration.diskarbitrationd.plist DADisableEjectNotification -bool YES && sudo pkill diskarbitrationd\
+exit
+j planck
+vim planck.keymap
+j nvim
+cd lua
+west build -b nice_nano -- -DSHIELD=planck && cp ./build/zephyr/zmk.uf2 /Volumes/NICENANO\
+
+git add boards/shields/planck
+git restore boards/arm/planck/planck_rev6.keymap
+git commit -m 'First version of my HHKB x Planck keyboard'
+git status
+git restore boards/shields/planck/planck.keymap
+tmux
+xxd
+exit #c #
+tmux attach
+ta
+j kitt
+cd include
+cd dt-bindings/la
+cd dt-bindings
+cd zmk
+cd dt-bindings/zmk
+vim keys.h
+vim german.h
+/
+q
+cp ./build/zephyr/zmk.uf2 /Volumes/NICENANO
+can I really use it this way the problem is that it lags until I release the current thing that I am pressing I just don
+esit
+cd -- skhd
+brew install skhd
+j shkd
+a
+djklfjlsdf
+open -a "/Applications/Alacritty.app/"
+./Alacritty.app
+open Alacritty.app
+open -na Alacritty.app
+ivm
+/Applications/Alacritty.app/Contents/MacOS/alacritty\
+
+skhd
+skhd --reload
+exity
+j tmux
+j kitty
+open -a "/Applications/Mail.app/"\
+
+open -a "/Applications/Mail/"\
+
+cd Applications
+cd /Applications
+open -a /System/Applications/Mail.app
+open -a "Brave Browser"
+open -a "Brave Browser.app"
+figlet -f roman -w 120 skhd | pbcopy
+pmset displaysleepnow
+skhd -V
+J
+ssh pi@192.168.50.201
+htop
+man tmux
+xxd -psd
+vim keymapsave.keymap
+rm keymapsave.keymap
+0123.
+audiodevice
+brew install switchaudio-osx
+SwitchAudioSource --help
+SwitchAudioSource -c
+SwitchAudioSource -s DisplayPort
+SwitchAudioSource -s WH-1000XM3
+SwitchAudioSource -a
+SwitchAudioSource -s Built-in Output
+SwitchAudioSource -s "Built-in Output"
+SwitchAudioSource -n
+brew services start skhd
+brew search yabai
+brew info yabai
+sudo reboot
+csrutil status
+sudo visudo -f /private/etc/sudoers.d/yabai
+cd yabai
+vim yabairc
+brew upgrade yabai
+brew start yabai
+j skhd
+vim skhdrc
+sudo yabai --uninstall-sa
+sudo yabai --check-sa
+yabai -m space --focus 2
+codesign --force -s - $(which yabai)
+brew uninstall yabai
+brew remove yabai
+brew install yabai
+brew remove amethyst
+tail -f /usr/local/var/log/yabai/yabai.err.log
+yabai -h
+yabai
+sudo yabai --install-sa
+sudo yabai --load-sa
+brew services list
+brew services start yabai
+yabai -m space --destroy
+yabai -m space --move next
+yabai -m space 1 --label main
+yabai -m space --focus main
+yabai -m window --focus west
+yabai -m window --toggle border
+yabai -m window --space prev
+yabai -m config active_window_border_color 0xff775759
+yabai -m config normal_window_border_color 0x0000000000
+yabai -m config normal_window_border_color 0x000000000
+yabai -m config normal_window_border_color 0x00000000
+yabai -m config normal_window_border_color 0x0000000
+yabai -m config normal_window_border_color 0x00000000000
+yabai -m config normal_window_border_color 0x000000000000
+yabai -m config normal_window_border_color 0x000000
+yabai -m window --space next
+yabai -m config active_window_border_color 0xfffffffff
+yabai -m config window_border on
+cd glfw
+vim cocoa_window.m
+vim nsgl_context.m
+make
+cd kity
+cd Downloads/kitty
+sudo codesign -fs ./kitty.app
+sudo codesign -fs my-new-cert ./kitty.app
+mv kitty kitty2
+git clone https://github.com/arkenthera/kitty.git
+rm -r kitty
+rm -rf kitty
+rm -rf kitt2
+rm -rf kitty2
+git clone https://github.com/kovidgoyal/kitty.git
+make app
+chmod +x /Users/philip/Downloads/kitty/kitty.app/Contents/MacOS/kitty
+open -a kitty
+open -a ./kitty
+open -a ./kitty.app
+./kitty/launcher/kitty
+cd kitty.app
+cd Contents
+brew info harbuzz
+brew info harfbuzz
+brew install harfbuzz
+brew install zlib
+brew install libpng
+brew install libpcms2
+brew install liblcms2
+brew install librsync
+brew remove rectangle
+j app
+west build -p -b nice_nano -- -DSHIELD=planck && cp ./build/zephyr/zmk.uf2 /Volumes/NICENANO\
+
+open ~
+brew search YabaiIndicator
+ranger
+brew search ranger
+brew install ranger
+defaults write com.apple.Dock autohide-delay -float 5.0; killall Dock
+defaults write com.apple.Dock autohide-delay -float 1115.0; killall Dock
+defaults read com.apple.dock "autohide-delay"\
+
+defaults delete com.apple.dock "autohide-delay" && killall Dock
+defaults write com.apple.dock "autohide-delay" -float "3.5" && killall Dock
+j yabai
+man yabai
+brew services restart yabai
+yabai -m window --stack
+yabai -m window --stack 1
+yabai -m window --stack next
+yabai -m window --swap next
+yabai -m window --warp north
+yabai -m window --opacity 0.4
+yabai -m window --opacity 1.0
+yabai -m window --minimize mouse
+brew services restart skhd
+yabai -m window --focus next
+yabai -m window --focus prev
+yabai -m space --focus prev
+yabai -m space --focus recent
+brew search iterm2
+pip search pywal
+pip3 search pywal
+pip install pywal
+pip install --upgrade piop
+pip install --upgrade pip
+brew install iterm2
+cd Downloads
+wal -i ruslan-bardash-g83y6do219w-unsplash.jpeg
+brew services stop yabai
+brew services stop skhd
+pip remove pywal
+pip uninstall pywal
+reboot now
+open Dock
+defaults write com.apple.dock "autohide-delay" -float "0.5" && killall Dock
+sudo nvram internet-recovery-mode=RecoveryModeDisk
+sudo reboot now
+open -a Dock
+brew list | vim
+sudo nvram boot â€ƒ³arg=â€ƒ½-xâ€ƒ½
+sudo nvram boot-args="-x"
+vim aliases
+vim profile
+vim zprofile
+cd etc
+vim zshrc
+brew install lsd
+brew install zoxide
+j macsetup
+cd Desktop/Mac\ Setup
+whoami
+rm zshenv2
+vim zhenv2
+rm zhenv2
+sudo rm zhenv2
+./test
+vim BrewApps.txt
+brew list
+brew search rustup
+brew info rustup-init
+brew search betaflight
+cd ./config/kitty
+cd /.config/kitty
+cd kitty
+vim kitty.conf
+cd init.lua
+cd .config/nvim/lua/Plugins/
+cp plugins.lua pluginsBackup.lua
+vim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+vim macosSettings
+defaults read
+defaults write com.apple.swipescrolldirection -bool false
+defaults write com.apple.swipescrolldirection -bool truue
+defaults write com.apple.swipescrolldirection -bool true
+defaults write com.apple.swipescrolldirection -int 0
+defaults delete com.apple.swipescrolldirection -int 0
+defaults read com.apple.swipescrolldirection
+defaults write -g com.apple.swipescrolldirection -bool NO
+defaults write -g com.apple.swipescrolldirection -bool YES
+defaults delete com.apple.swipescrolldirection
+defaults delete -g com.apple.swipescrolldirection
+write NSGlobalDomain com.apple.swipescrolldirection -bool true
+defaults delete NSGlobalDomain com.apple.swipescrolldirection
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+defaults read -g com.apple.swipescrolldirection
+cd /usr/local/Cellar/share
+cd /usr/local
+find packer
+find -r packer
+cd .local/share/
+cd shite
+cd site
+cd pack
+cd packer
+rm -r pack
+cd ,,
+cd Plugins
+brew remove neovim
+brew install neovim
+cd ../..
+touch init.lua
+rm -rf pack
+brew info git
+export PATH="/usr/local/bin:${PATH}"
+cd zsh
+cd ../nvim
+$ nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+git https://github.com/AstroNvim/AstroNvim.git
+git clone https://github.com/wbthomason/packer.nvim.git
+eixt
+cd .config/nvim
+vim init.lua
+rm -rf nvim
+git config --list --show-origin
+git remote -v
+brew remove git
+rm -rf /usr/local/etc/gitconfig
+brew cleanup
+brew install git
+cd git
+vim config
+brew search libcurl
+git clone https://github.com/AstroNvim/AstroNvim.git
+git clone https://github.com/libgit2/libgit2
+j .config
+cd nvim
+cd lua/Plugins/
+nvim
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+vim plugins.lua
+git version
+vim macse
+brew install font-victor-mono-nerd-font\
+
+brew search victor mono
+brew search victormononerdfont
+brew tap homebrew/cask-fonts && brew install --cask font-victor-mono-nerd-font
+brew search password
+brew install pass gnupg
+pass
+rm -rf .gnupg
+brew install pinentry-mac
+pass web/gmx.ch
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+spctl
+sudo spctl --master-disable\
+
+chflags hidden ~/Library
+chflags hidden ~/Library/
+chflags nohidden ~/Library
+sudo systemsetup -listtimezones
+sudo systemsetup -settimezone Europe/Zurich
+systemsetup
+sudo systemsetup
+defaults write NSGlobalDomain AppleShowScrollBars -string "Always"\
+
+defaults read NSGlobalDomain AppleShowScrollBars \
+
+defaults read NSGlobalDomain NSWindowResizeTime \
+
+defaults write NSGlobalDomain NSWindowResizeTime -float 5.001\
+
+defaults write NSGlobalDomain NSWindowResizeTime -float 30.001\
+
+defaults write NSGlobalDomain NSWindowResizeTime -float 0.001\
+
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true\
+
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true\
+
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true\
+
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false\
+
+defaults write com.apple.dock persistent-apps -array\
+
+defaults write com.apple.dock tilesize -int 36\
+
+defaults write com.apple.dock expose-animation-duration -float 0.1\
+
+defaults write com.apple.dock mru-spaces -bool true\
+
+defaults write com.apple.dock mru-spaces -bool false\
+
+defaults write com.apple.dock autohide -bool true\
+
+defaults write com.apple.dock autohide-delay -float 10\
+
+defaults write com.apple.dock autohide-delay -float 0\
+
+defaults write com.apple.dock autohide-time-modifier -float 0\
+
+defaults write NSGlobalDomain AppleShowAllExtensions -bool false\
+
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true\
+
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false\
+
+defaults write com.apple.finder FXInfoPanesExpanded -dict General -bool true OpenWith -bool true Privileges -bool true\
+
+chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library\
+
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"\
+
+defaults write com.apple.finder NewWindowTarget PfHm\
+
+defaults write com.apple.finder NewWindowTargetPath "~/"\
+
+defaults write com.apple.finder ShowPathbar -bool true \
+
+defaults write com.apple.finder _FXSortFoldersFirst -bool true\
+
+defaults write com.apple.finder SidebarShowingiCloudDesktop -bool NO \
+
+defaults write com.apple.TextEdit RichText -int 0 \
+
+defaults write -g com.apple.mouse.scaling 2.5\
+
+defaults write -g com.apple.mouse.scaling 12.5\
+
+defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true\
+
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false\
+
+defaults write NSGlobalDomain KeyRepeat -int 2\
+
+defaults write NSGlobalDomain InitialKeyRepeat -int 15\
+
+defaults write com.apple.menuextra.battery ShowPercent YES \
+
+defaults write com.apple.screencapture type jpg\
+
+defaults write com.apple.systemuiserver menuExtras '\
+(\
+    "/System/Library/CoreServices/Menu Extras/Volume.menu",\
+    "/System/Library/CoreServices/Menu Extras/Battery.menu",\
+    "/System/Library/CoreServices/Menu Extras/Bluetooth.menu",\
+    "/System/Library/CoreServices/Menu Extras/Clock.menu"\
+)'\
+
+mv MontereySettings Settings
+chmod +x Settings
+mv Settings Settings.sh
+cd /etc
+vim zshenv2
+sudo rm -rf zshenv2
+rm -rf zshenv
+sudo rm -rf zshenv
+brew search transmission
+brew tap amar1729/formulae\
+
+brew search browserpass
+brew search logi
+yo=pwd
+$yo
+$yo/Settings.sh
+pwd | pbcopy
+vim zshenv
+sudo chown -R $(whoami) /usr/local/share/zsh /usr/local/share/zsh/site-functions\
+
+./macsetup
+brew search monitorcontrol
+cp .gnupg ./.config/gnupg
+cp -r .gnupg ./.config/gnupg
+cd .config/
+cd..
+mv .gnupg .gnupg2
+cd gnupg
+defaults write org.gpgtools.common DisableKeychain -bool yes
+pass -c web/github.com
+vim Settings.sh
+defaults write com.apple.scriptmenu.plist ScriptMenuEnabled true
+defaults delete com.apple.scriptmenu.plist ScriptMenuEnabled
+defaults read com.apple.universalaccess reduceTransparency
+defaults write NSGlobalDomain AppleLocale -string "en_GB@currency=CHF"
+defaults write NSGlobalDomain AppleLocale -string "en_CH@currency=CHF"
+defaults read NSGlobalDomain AppleLocale
+defaults read NSGlobalDomain AppleLanguages
+sudo systemsetup -gettimezone\
+
+./Settings.sh
+defaults read com.apple.screensaver askForPasswordDelay \
+
+defaults read | vim
+\
+defaults write com.apple.finder ShowStatusBar -bool true\
+
+defaults write com.apple.systemuiserver menuExtras ' \
+( \
+    "/System/Library/CoreServices/Menu Extras/Volume.menu", \
+    "/System/Library/CoreServices/Menu Extras/AirPort.menu", \
+    "/System/Library/CoreServices/Menu Extras/Battery.menu", \
+    "/System/Library/CoreServices/Menu Extras/Bluetooth.menu", \
+    "/System/Library/CoreServices/Menu Extras/Clock.menu" \
+)'
+killall SystemUIServer
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist Bluetooth -int 20\
+
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist Bluetooth -int 16\
+
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist Bluetooth -int 18\
+
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist BatteryShowPercentage -bool true\
+
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist
+defaults write ~/Library/Preferences/ByHost/com.apple.Spotlight MenuItemHidden -bool false\
+c
+defaults write ~/Library/Preferences/ByHost/com.apple.Spotlight MenuItemHidden -bool false\
+
+defaults read ~/Library/Preferences/ByHost/com.apple.controlcenter.plist doNotDisturb
+defaults read ~/Library/Preferences/ByHost/com.apple.notificationcenterui doNotDisturb
+defaults -currentHost write ~/Library/Preferences/ByHost/com.apple.notificationcenterui doNotDisturb -boolean false
+defaults write ~/Library/Preferences/ByHost/com.apple.notificationcenterui doNotDisturb -boolean false
+killall NotificationCenter
+defaults read com.apple.controlcenter "NSStatusItem Visible DoNotDisturb"
+defaults read ~/Library/Preferences/ByHost/com.apple.controlcenter.plist
+defaults read ~/Library/Preferences/ByHost/com.apple.controlcenter.plist doNotDisturb -int 0
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist doNotDisturb -int 0
+defaults write ~/Library/Preferences/ByHost/com.apple.Spotlight MenuItemHidden -bool true\
+
+defaults read ~/Library/Preferences/ByHost
+defaults read ~/Library/Preferences/ByHost/com.apple.notificationcenterui
+defaults read ~/Library/Preferences/ByHost/com.apple.controlcenter
+defaults read ~/Library/Preferences/com.crystalidea.com
+defaults read ~/Library/Preferences/com.crystalidea.macsfancontrol.plist\
+
+defaults read ~/Library/Preferences/com.crystalidea.macsfancontrol.plist | vim\
+
+defaults write ~/Library/Preferences/com.crystalidea.macsfancontrol.plist '{\
+    ActivePreset = "Predefined:0";\
+    AppFirstRun = 0;\
+    CustomPresets =     (\
+    );\
+    DontCheckForHelperTool = 0;\
+    Fahrenheit = 0;\
+    InterfaceLanguage = "English.xml";\
+    License = "";\
+    MoveToAppsSkip = 0;\
+    "NSStatusItem Preferred Position MacsFanControlMenuBarIcon" = 554;\
+    PreciseTemperature = 0;\
+    RateOnMacupdateNextDate = "2022-05-25T21:31:44";\
+    RateOnMacupdateSkip = 0;\
+    ShowEGpuTemp = 1;\
+    ShowNVMeDrives = 1;\
+    ShowSmartDrives = 0;\
+    "UpdateChecker_Auto" = 1;\
+    "UpdateChecker_NextCheck" = "2022-05-19T21:32:46";\
+    "UpdateChecker_SkipVersion" = "";\
+    WindowGeometry = {length = 0, bytes = 0x};\
+    WindowSplitterPosition =     (\
+    );\
+    WindowState = {length = 0, bytes = 0x};\
+    menubarIcon = 0;\
+    menubarTwoLines = 1;\
+    trayFan = 0;\
+    traySensor = cpucoreavg;\
+}'\
+
+defaults write ~/Library/Preferences/com.crystalidea.macsfancontrol.plist '\
+    ActivePreset = "Predefined:0";\
+    AppFirstRun = 0;\
+    CustomPresets =     (\
+    );\
+    DontCheckForHelperTool = 0;\
+    Fahrenheit = 0;\
+    InterfaceLanguage = "English.xml";\
+    License = "";\
+    MoveToAppsSkip = 0;\
+    "NSStatusItem Preferred Position MacsFanControlMenuBarIcon" = 554;\
+    PreciseTemperature = 0;\
+    RateOnMacupdateNextDate = "2022-05-25T21:31:44";\
+    RateOnMacupdateSkip = 0;\
+    ShowEGpuTemp = 1;\
+    ShowNVMeDrives = 1;\
+    ShowSmartDrives = 0;\
+    "UpdateChecker_Auto" = 1;\
+    "UpdateChecker_NextCheck" = "2022-05-19T21:32:46";\
+    "UpdateChecker_SkipVersion" = "";\
+    WindowGeometry = {length = 0, bytes = 0x};\
+    WindowSplitterPosition =     (\
+    );\
+    WindowState = {length = 0, bytes = 0x};\
+    menubarIcon = 0;\
+    menubarTwoLines = 1;\
+    trayFan = 0;\
+    traySensor = cpucoreavg;\
+'
+defaults write ~/Library/Preferences/com.crystalidea.macsfancontrol.plist 'ActivePreset = "Predefined:0";\
+    AppFirstRun = 0;\
+    CustomPresets =     (\
+    );\
+    DontCheckForHelperTool = 0;\
+    Fahrenheit = 0;\
+    InterfaceLanguage = "English.xml";\
+    License = "";\
+    MoveToAppsSkip = 0;\
+    "NSStatusItem Preferred Position MacsFanControlMenuBarIcon" = 554;\
+    PreciseTemperature = 0;\
+    RateOnMacupdateNextDate = "2022-05-25T21:31:44";\
+    RateOnMacupdateSkip = 0;\
+    ShowEGpuTemp = 1;\
+    ShowNVMeDrives = 1;\
+    ShowSmartDrives = 0;\
+    "UpdateChecker_Auto" = 1;\
+    "UpdateChecker_NextCheck" = "2022-05-19T21:32:46";\
+    "UpdateChecker_SkipVersion" = "";\
+    WindowGeometry = {length = 0, bytes = 0x};\
+    WindowSplitterPosition =     (\
+    );\
+    WindowState = {length = 0, bytes = 0x};\
+    menubarIcon = 0;\
+    menubarTwoLines = 1;\
+    trayFan = 0;\
+    traySensor = cpucoreavg;'\
+
+defaults write ~/Library/Preferences/com.crystalidea.macsfancontrol.plist menubarTwoLines = 1\
+
+defaults write ~/Library/Preferences/com.crystalidea.macsfancontrol.plist menubarTwoLines -int 1\
+
+defaults write ~/Library/Preferences/com.crystalidea.macsfancontrol.plist '\
+    (menubarTwoLines -int 1,\
+    PreciseTemperature -int 1,\
+)'\
+
+defaults write ~/Library/Preferences/com.crystalidea.macsfancontrol.plist '\
+    (\
+    "menubarTwoLines -int 1",\
+    "PreciseTemperature -int 1"\
+)'\
+
+defaults write ~/Library/Preferences/com.crystalidea.macsfancontrol.plist '\\
+    (\\
+    "menubarTwoLines -int 1",\\
+    "PreciseTemperature -int 1"\\
+)'\\
+
+defaults write ~/Library/Preferences/com.crystalidea.macsfancontrol.plist menubarTwoLines -int 1\
+defaults write ~/Library/Preferences/com.crystalidea.macsfancontrol.plist menubarIcon -int 0\
+defaults write ~/Library/Preferences/com.crystalidea.macsfancontrol.plist PreciseTemperature -int 1\
+
+defaults read ./com.apple.menuextra.battery.plist\
+
+defaults read ./com.apple.donotdisturbd.plist
+cd ~/Library/Preferences/ByHost
+defaults read ~/Library/Preferences/ByHost/com.apple.controlcenter.plist\
+
+cd /Volumes/Extern
+cd philips\ backup
+rm -rf LifeArea
+sudo rm -rf LifeArea
+killall -HUP mDNSResponder\
+
+defaults read com.apple.print.PrintingPrefs.plist
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist Sound -int 18\
+
+ls | vim
+defaults write me.guillaumeb.MonitorControl.plist "NSStatusItem Preferred Position Item-0" -int 0\
+
+defaults read me.guillaumeb.MonitorControl.plist\
+
+defaults write me.guillaumeb.MonitorControl.plist "NSStatusItem Preferred Position Item-0" -int 13\
+
+defaults write me.guillaumeb.MonitorControl.plist "NSStatusItem Preferred Position Item-0" -int 12\
+
+defaults write me.guillaumeb.MonitorControl.plist "NSStatusItem Preferred Position Item-0" -int 479
+cd .android
+rm -rf .gnupg .gnupg2
+ls -la
+vim 0BFA677E-56D7-495E-A76E-F27ACC153280.history
+vim 18A711E9-B7FB-4AA4-8C00-65B15490784D.history
+tmux detach
+echo
+echo 'how are you doin'
+vim *
+cd .zsh_sessions
+vim 261C3199-7E50-48B2-8994-3452794962A6.session
+vim 293425F7-CC6E-443F-8A9F-E0B7DB081E6D.session
+vim 2E318530-DF44-4677-A8DF-C1C9E699CC32.session
+source .zshenv
+rm -rf .zsh_sessions
+cd .terminfo
+cd 78
+vim xterm-kitty
+echo $TERM
+echo $TERMINF
+echo $TERMINFO
+rm -rf .terminfo
+cd .dotfiles
+rm -rf .DD*
+cd share
+vim .zsh_history
+rm .zsh_history
+vim .zshenv
+rm -rf .lesshst
+source ~/.config/zsh/.zshenv
+cd .local
+mkdir state
+cd .local/state
+mkdir less
+mkdir history
+cd history
+cd Library
+less
+cd ~/.config
+cd tmux
+vim tmux.conf
+less tmux.conf
+cd ../password-store
+cd Web
+cd .local/state/less/history
+al
+cd less
+vim historQ
+rm -rf history
+vim .viminfo
+rm .viminfo
+cat .CFUserTextEncoding
+chflags hidden ~/Public
+chmod 000 ~/Public
+ls --ignore 'Public'
+man lsd
+man ls
+ls --ignore=Public
+ls --ignore=exitPubli c
+ls --ignore='Public'
+ls --hide Public
+lsd --help
+ls -I Public
+ls -I Public -I .CFUserTextEncoding
+ls -I Public -I .CFUserTextEncoding .DS_Store
+cd Documents
+rm -rf Fusion\ 360
+ls -I Public -I .CFUserTextEncoding -I .DS_Store
+vim .localized
+source .zshrc
+vim alias
+l
+mkdir hm
+lt
+vim mac
+vim macsetup
+ls -I ~/Music
+hm
+mkdir .dotfiles
+rm -rf .dotfiles
+rm .dotfiles
+touch hello.txt
+ls -F
+ls -lh
+ls -l
+pwd
+los
+gc
+cd Desktop
+god
+j mac
+rm hm
+rm hello.txt
+rm -rf .android
+chflags hidden ~/{Pictures,Music,Movies,Documents,Public}\
+chmod 000 ~/{Pictures,Music,Movies,Documents,Public}\
+
+open .
+chflags hidden ~/{Library,Pictures,Music,Movies,Documents,Public}\
+
+open ./
+defaults write /Library/Preferences/com.apple.screensaver loginWindowIdleTime 10\
+
+defaults write /Library/Preferences/com.apple.screensaver loginWindowIdleTime -int 10\
+
+defaults read /Library/Preferences/com.apple.screensaver
+cd /Library/Preferences
+ls | less
+defaults write ~/Library/Preferences/com.apple.screensaver loginWindowIdleTime -int 10\
+
+defaults write ~/Library/Preferences/com.apple.screensaver loginWindowIdleTime -int 1\
+
+defaults read ~/Library/Preferences/com.apple.screensaver
+defaults write com.apple.screensaver loginWindowIdleTime -int 1\
+
+defaults -currentHost write com.apple.screensaver idleTime -int 30\
+
+defaults -currentHost write com.apple.screensaver idleTime -int 10\
+
+defaults -currentHost write com.apple.screensaver idleTime -int 60\
+
+defaults -currentHost write com.apple.screensaver idleTime -int 0\
+
+defaults read NSGlobalDomain NSUserKeyEquivalents
+defaults read ~/Library/Preferences/.GlobalPreferences.plist | vim
+defaults read defaults read NSGlobalDomain NSUserKeyEquivalents
+defaults read ~/Library/Preferences/pbs.plist
+defaults read com.apple.Spotlight.plist
+/usr/libexec/PlistBuddy -c "Print :AppleSymbolicHotKeys" ~/Library/Preferences/com.apple.symbolichotkeys.plist\
+
+defaults read ~/Library/Preferences/com.apple.symbolichotkeys.plist | less
+/usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist -c "Delete :AppleSymbolicHotKeys:64" -c "Add :AppleSymbolicHotKeys:64:enabled bool enable" -c "Add :AppleSymbolicHotKeys:64:value:parameters array" -c "Add :AppleSymbolicHotKeys:64:value:parameters: integer 32" -c "Add :AppleSymbolicHotKeys:64:value:parameters: integer 49" -c "Add :AppleSymbolicHotKeys:64:value:parameters: integer 524288" -c "Add :AppleSymbolicHotKeys:64:type string standard"\
+
+/usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist -c "Delete :AppleSymbolicHotKeys:64:value:parameters: integer 1048576" -c "Add :AppleSymbolicHotKeys:64:value:parameters: integer 524288"
+defaults read ~/Library/Preferences/com.apple.symbolichotkeys.plist
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 â€ƒ¼{enabled = 1; value = { parameters = (49, 32, 524288); type = â€ƒ¸standardâ€ƒ¹; }; }â€ƒ½\
+
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 â€ƒ¼{enabled = 1; type = standard; value = { parameters = (49, 32, 524288); type = â€ƒ¸standardâ€ƒ¹; };  };â€ƒ½\
+
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "{\
+            enabled = 1;\
+            type = standard;\
+            value =             {\
+                parameters =                 (\
+                    49,\
+                    32,\
+                    524288\
+                );\
+                type = standard;\
+            };};"\
+
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "{\
+            enabled = 1;\
+            type = standard;\
+            value =             {\
+                parameters =                 (\
+                    49,\
+                    32,\
+                    524288\
+                );\
+                type = standard;\
+            };}"\
+
+defaults read ~/Library/Preferences/com.apple.symbolichotkeys.plist | vim
+cd ~/Library/Preferences/
+defaults read ~/Library/Preferences/.GlobalPreferences.plist
+defaults read com.raycast.macos.plist raycastGlobalHotkey -string "Shift-Option-49"
+defaults write com.raycast.macos.plist raycastGlobalHotkey -string "Shift-Option-49"
+defaults read com.raycast.macos.plist
+defaults write com.apple.dock magnification -bool YES && killall dock\
+
+defaults write com.apple.dock magnification -bool YES && killall Dock\
+
+defaults write com.apple.dock show-recents -bool true\
+
+defaults write com.apple.dock show-recents -bool false\
+
+defaults write com.apple.dock launchanim -bool true\
+
+defaults write com.apple.dock launchanim -bool false\
+
+killall Dock
+home
+mkdir Dev
+cd Dev
+ls -a | wc -l
+la | wc -l
+mkdir Code
+rm -rf Dev
+cd Code
+mkdir dotfiles
+cd dotfiles
+mv -r Code code
+mv Code code
+mv nvim ~/code/dotfiles
+cd code/dotfiles
+mv kitty tmux zsh ~/code/dotfiles
+cd Autodesk
+mv git gnupg password-store pyenv ~/code/dotfiles
+man
+man store
+man stow
+cd
+chown -R $(whoami) .config
+find .config -type f -exec chmod 600 {} \;
+mv git .config
+mkdir git
+mv .config git
+mv gnupg .config
+mkdir gnupg
+mv .config gnupg
+mv kitty .config
+mkdir kitty
+mv .config kitty
+mv nvim .config
+cd .config
+mkdir nvim
+mv .config nvim
+mv password-store .config
+mkdir password-store
+mv .config password-store
+mv pyenv .config
+mkdir pyenv
+mv .config pyenv
+mkdir .config
+mv tmux .config
+mkdir tmux
+mv .config tmux
+mkdir .config/
+mv zsh .config
+mkdir zsh
+mv .config zsh
+stow -t ~/ -n -v */
+stow -t ~/ -v */
+chown -R $(whoami) gnupg
+find gnupg -type f -exec chmod 600 {} \;
+find .config -type d -exec chmod 700 {} \;
+find gnupg -type d -exec chmod 700 {} \;
+pass web/github.com
+\:exit
+j zsh
+cd plugins
+cd fast-syntax-highlighting
+cd ..
+ls
+la
+vim .zshrc
+fzf-cd-widget e
+fzf
+fzf-cd-widget
+source ~/.config/zsh/.zshrc
+defaults write NSGlobalDomain NSWindowResizeTime -float 3.001\
+
+vim
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true\
+
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool false\
+
+exit
+cd code
+ls
+cd dotfiles
+ls
+stow -t ~/ -n -v */
+ls
+cd
+ls
+ls -a
+cd .config
+ls
+cd zsh
+ls
+ls -a
+cd
+rm -rf .config
+mkdir .config
+cd code/dotfiles
+stow -t ~/ -n -v */
+stow -t ~/ -v */
+exit

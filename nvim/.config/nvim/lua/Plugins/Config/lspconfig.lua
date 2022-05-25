@@ -1,0 +1,95 @@
+-- oooo                                                       .o88o.  o8o
+-- `888                                                       888 `"  `"'
+--  888   .oooo.o oo.ooooo.   .ooooo.   .ooooo.  ooo. .oo.   o888oo  oooo   .oooooooo
+--  888  d88(  "8  888' `88b d88' `"Y8 d88' `88b `888P"Y88b   888    `888  888' `88b
+--  888  `"Y88b.   888   888 888       888   888  888   888   888     888  888   888
+--  888  o.  )88b  888   888 888   .o8 888   888  888   888   888     888  `88bod8P'
+-- o888o 8""888P'  888bod8P' `Y8bod8P' `Y8bod8P' o888o o888o o888o   o888o `8oooooo.
+--                 888                                                     d"     YD
+--                o888o                                                    "Y88888P'
+
+-------------------------------------------------------------------------------------
+-- Todo
+-- [] Format this file nicely
+-- [] Tweak some settings for specific language servers when need arises
+-------------------------------------------------------------------------------------
+-- 	-- Python
+-- 		-- npm i -g pyright
+-- 		require'lspconfig'.pyright.setup{}
+-- 	-- CSS
+-- 		-- npm install -g vscode-css-languageserver-bin
+-- 		require'lspconfig'.cssls.setup {}
+-- 	-- HTML
+-- 		-- npm install -g vscode-html-languageserver-bin
+--                 local capabilities = vim.lsp.protocol.make_client_capabilities()
+-- 		capabilities.textDocument.completion.completionItem.snippetSupport = true
+--
+-- 		require'lspconfig'.html.setup {
+-- 		  capabilities = capabilities,
+-- 		}
+-- 		local nvim_lsp = require'lspconfig'
+-- 		local configs = require'lspconfig/configs'
+-- 		local capabilities = vim.lsp.protocol.make_client_capabilities()
+-- 		capabilities.textDocument.completion.completionItem.snippetSupport = true
+--
+-- 		configs.emmet_ls = {
+-- 		  default_config = {
+-- 		    cmd = {'emmet-ls', '--stdio'};
+-- 		    filetypes = {'html', 'css'};
+-- 		    root_dir = function()
+-- 		      return vim.loop.cwd()
+-- 		    end;
+-- 		    settings = {};
+-- 		  };
+-- 		}
+--
+-- nvim_lsp.emmet_ls.setup{
+--   on_attach = on_attach;
+-- }
+-- 	-- C, C++
+-- 		require'lspconfig'.clangd.setup {
+-- 		  cmd = {
+-- 		    "clangd",
+-- 		    "--background-index",
+-- 		    "--suggest-missing-includes",
+-- 		    "--clang-tidy",
+-- 		    "--header-insertion=iwyu",
+-- 		  },
+-- 		}
+--
+-- -- Sumneko-Lua ------------------------------------------------------------------------------------
+-- local runtime_path = vim.split(package.path, ';')
+-- table.insert(runtime_path, "lua/?.lua")
+-- table.insert(runtime_path, "lua/?/init.lua")
+--
+-- require'lspconfig'.sumneko_lua.setup {
+--   settings = {
+--     Lua = {
+--       runtime = {
+--         -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
+--         version = 'LuaJIT',
+--         -- Setup your lua path
+--         path = runtime_path,
+--       },
+--       diagnostics = {
+--         -- Get the language server to recognize the `vim` global
+--         globals = {'vim'},
+--       },
+--       workspace = {
+--         -- Make the server aware of Neovim runtime files
+--         library = vim.api.nvim_get_runtime_file("", true),
+--       },
+--       -- Do not send telemetry data containing a randomized but unique identifier
+--       telemetry = {
+--         enable = false,
+--       },
+--     },
+--   },
+-- }
+--
+-- -- JSON -------------------------------------------------------------------------------------------
+-- require'lspconfig'.jsonls.setup{}
+--
+-- -- Rust -------------------------------------------------------------------------------------------
+-- require'lspconfig'.rust_analyzer.setup{}
+--

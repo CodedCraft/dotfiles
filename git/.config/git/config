@@ -1,0 +1,24 @@
+[user]
+	name = Philip Büchler
+	email = philip.buechler@gmail.com
+	signingkey = 6D1F0F7054265022DB7A77B79CAAACC163FFE539
+[core]
+	editor = "nvim"
+	excludesfile = /Users/philip/.config/git/gitignore_global
+[init]
+	defaultBranch = master
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+[pull]
+	rebase = true
+[fetch]
+	prune = true
+[diff]
+	colorMoved = zebra
+[commit]
+	template = /Users/philip/.config/git/gitMessage.txt
+[help]
+	autoCorrect = 30

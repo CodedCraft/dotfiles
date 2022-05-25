@@ -1,0 +1,13 @@
+
+# Add Capitalized, short (50 chars or less) summary.
+
+# Write your commit message in the imperative: "Fix bug" and not "Fixed bug"
+# or "Fixes bug." More detailed explanatory text, if necessary.
+# Wrap it to about 72 characters or so. The blank line separating the summary from the body
+# is critical (unless you omit the body entirely); tools like rebase can get
+# confused if you run the two together.
+
+# If you use an issue tracker, add a reference(s) to them at the bottom,
+# like so:
+
+# Resolves: #123
