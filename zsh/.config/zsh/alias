@@ -13,7 +13,7 @@
     alias zs='source $HOME/.config/zsh/.zshrc'
     alias v='nvim'
     alias vim='nvim'
-    alias J='v "$HOME/LifeAreas/WrittenDocs/Journal/journal.md" +1'
+    alias J='v "$HOME/Write/Journal/journal.md" +1'
     alias rm='rm -ri'
     alias del='trash'
     alias dotfiles='/usr/bin/git --git-dir=$HOME/.config/dotfiles/ --work-tree=$HOME' #Command for Git Bare Repository for dotfiles

@@ -1,5 +1,4 @@
 # Automatically load scripting additions on restart
-sudo yabai --load-sa
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 
 # Basic layout configurations
@@ -32,32 +31,36 @@ yabai -m config window_gap 5
 #yabai -m config external_bar all:20:5
 
 # # Yabai Rules
-yabai -m rule --add app="^System Preferences$"  manage=off layer=above
+yabai -m rule --add app="^System Preferences$"  manage=off border=off
+# yabai -m rule --add app="^Velocidrone.app$"  manage=off border=off
+yabai -m rule --add app="^launcher$"  manage=off border=off
 # yabai -m rule --add app="GK6+" manage=off layer=above
 # yabai -m rule --add app="The Unarchiver" manage=off layer=above
 # yabai -m rule --add app="Finder" manage=off #layer=above
+yabai -m rule --add app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off
+yabai -m rule --add app="^Keyboard Setup Assistant$"  manage=off border=off
 
 # # Assign Apps to Spaces
-yabai -m rule --add app="^(Brave Browser|Mail|Chrome|Safari)$" space=1
+yabai -m rule --add app="^(Brave Browser|Mail|Google Chrome|Safari)$" space=1
 yabai -m rule --add app="^kitty$" space=2
 yabai -m rule --add app="^Fusion 360$" space=3
 yabai -m rule --add app="^SuperSlicer$" space=4
 # #yabai -m rule --add app="^Finder$" space=finder
 #
-# # signals
+
 # yabai -m signal --add event=window_destroyed active=yes action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse &> /dev/null || yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id) &> /dev/null"
 # yabai -m signal --add event=application_launched app="^Mail$" action="yabai -m space --focus mail &> /dev/null" app="^Mail$"
 # yabai -m signal --add event=application_launched app="^Alacritty$" action="yabai -m space --focus code &> /dev/null" app="^Alacritty$"
 # #yabai -m signal --add event=application_launched app="^Finder$" action="yabai -m space --focus finder &> /dev/null" app="^Finder$"
 
 # Yabai Indicator Settings
-yabai -m signal --add event=mission_control_exit action='echo "refresh" | nc -U /tmp/yabai-indicator.socket'
-yabai -m signal --add event=display_added action='echo "refresh" | nc -U /tmp/yabai-indicator.socket'
-yabai -m signal --add event=display_removed action='echo "refresh" | nc -U /tmp/yabai-indicator.socket'
-yabai -m signal --add event=window_created action='echo "refresh windows" | nc -U /tmp/yabai-indicator.socket'
-yabai -m signal --add event=window_destroyed action='echo "refresh windows" | nc -U /tmp/yabai-indicator.socket'
-yabai -m signal --add event=window_focused action='echo "refresh windows" | nc -U /tmp/yabai-indicator.socket'
-yabai -m signal --add event=window_moved action='echo "refresh windows" | nc -U /tmp/yabai-indicator.socket'
-yabai -m signal --add event=window_resized action='echo "refresh windows" | nc -U /tmp/yabai-indicator.socket'
-yabai -m signal --add event=window_minimized action='echo "refresh windows" | nc -U /tmp/yabai-indicator.socket'
-yabai -m signal --add event=window_deminimized action='echo "refresh windows" | nc -U /tmp/yabai-indicator.socket'
+# yabai -m signal --add event=mission_control_exit action='echo "refresh" | nc -U /tmp/yabai-indicator.socket'
+# yabai -m signal --add event=display_added action='echo "refresh" | nc -U /tmp/yabai-indicator.socket'
+# yabai -m signal --add event=display_removed action='echo "refresh" | nc -U /tmp/yabai-indicator.socket'
+# yabai -m signal --add event=window_created action='echo "refresh windows" | nc -U /tmp/yabai-indicator.socket'
+# yabai -m signal --add event=window_destroyed action='echo "refresh windows" | nc -U /tmp/yabai-indicator.socket'
+# yabai -m signal --add event=window_focused action='echo "refresh windows" | nc -U /tmp/yabai-indicator.socket'
+# yabai -m signal --add event=window_moved action='echo "refresh windows" | nc -U /tmp/yabai-indicator.socket'
+# yabai -m signal --add event=window_resized action='echo "refresh windows" | nc -U /tmp/yabai-indicator.socket'
+# yabai -m signal --add event=window_minimized action='echo "refresh windows" | nc -U /tmp/yabai-indicator.socket'
+# yabai -m signal --add event=window_deminimized action='echo "refresh windows" | nc -U /tmp/yabai-indicator.socket'

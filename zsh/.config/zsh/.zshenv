@@ -35,7 +35,7 @@
     if [ -d "$HOME/Applications/platform-tools" ] ; then
      export PATH="$HOME/Applications/platform-tools:$PATH"
     fi
-    export GNUPGHOME=$HOME/.config/gnupg
+    export gnuPGHOME=$HOME/.config/gnupg
 
     export PATH="/usr/local/opt/llvm/bin:$PATH"
     export PASSWORD_STORE_DIR=$HOME/.config/password-store
@@ -94,10 +94,11 @@ export IDF_PATH=$HOME/esp/ESP8266_RTOS_SDK
 
 # Nordic NRF Connect SDK Toolchain ------------------------------------------------------------
 
-export PATH=/opt/nordic/ncs/v1.8.0/toolchain/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+# export PATH=/opt/nordic/ncs/v1.8.0/toolchain/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 #export GIT_EXEC_PATH=/opt/nordic/ncs/v1.8.0/toolchain/Cellar/git/2.32.0_1/libexec/git-core
 export ZEPHYR_TOOLCHAIN_VARIANT=gnuarmemb
-export GNUARMEMB_TOOLCHAIN_PATH=/opt/nordic/ncs/v1.8.0/toolchain
+# export GNUARMEMB_TOOLCHAIN_PATH=/opt/nordic/ncs/v1.8.0/toolchain
+export GNUARMEMB_TOOLCHAIN_PATH="/usr/local/"
 
 # I can probably remove this at some point:
 export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"
