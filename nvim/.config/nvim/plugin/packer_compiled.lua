@@ -159,13 +159,11 @@ _G.packer_plugins = {
     url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-lsp-installer"] = {
-    config = { "require('Plugins.Config.nvim-lsp-installer')" },
     loaded = true,
     path = "/Users/philip/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
     url = "https://github.com/williamboman/nvim-lsp-installer"
   },
   ["nvim-lspconfig"] = {
-    config = { "require('Plugins.Config.lspconfig')" },
     loaded = true,
     path = "/Users/philip/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
@@ -268,7 +266,7 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/vim-vsnip-integ"
   },
   ["zen-mode.nvim"] = {
-    config = { "\27LJ\2\nü\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\vwindow\1\0\1\rbackdrop\3\1\fplugins\1\0\0\nkitty\1\0\2\tfont\a+4\fenabled\1\1\0\2\rgitsigns\1\ttmux\2\nsetup\rzen-mode\frequire\0" },
+    config = { "\27LJ\2\nü\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\vwindow\1\0\1\rbackdrop\3\1\fplugins\1\0\0\nkitty\1\0\2\tfont\a+4\fenabled\1\1\0\2\ttmux\2\rgitsigns\1\nsetup\rzen-mode\frequire\0" },
     loaded = true,
     path = "/Users/philip/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
     url = "https://github.com/folke/zen-mode.nvim"
@@ -276,42 +274,38 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: lspkind-nvim
+time([[Config for lspkind-nvim]], true)
+require('Plugins.Config.lspkind')
+time([[Config for lspkind-nvim]], false)
 -- Config for: zen-mode.nvim
 time([[Config for zen-mode.nvim]], true)
-try_loadstring("\27LJ\2\nü\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\vwindow\1\0\1\rbackdrop\3\1\fplugins\1\0\0\nkitty\1\0\2\tfont\a+4\fenabled\1\1\0\2\rgitsigns\1\ttmux\2\nsetup\rzen-mode\frequire\0", "config", "zen-mode.nvim")
+try_loadstring("\27LJ\2\nü\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\vwindow\1\0\1\rbackdrop\3\1\fplugins\1\0\0\nkitty\1\0\2\tfont\a+4\fenabled\1\1\0\2\ttmux\2\rgitsigns\1\nsetup\rzen-mode\frequire\0", "config", "zen-mode.nvim")
 time([[Config for zen-mode.nvim]], false)
--- Config for: bufferline.nvim
-time([[Config for bufferline.nvim]], true)
-require('Plugins.Config.bufferline')
-time([[Config for bufferline.nvim]], false)
--- Config for: telescope.nvim
-time([[Config for telescope.nvim]], true)
-require('Plugins.Config.telescope')
-time([[Config for telescope.nvim]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
-require'Plugins.Config.lualine'
-time([[Config for lualine.nvim]], false)
--- Config for: shade.nvim
-time([[Config for shade.nvim]], true)
-require'Plugins.Config.shade'
-time([[Config for shade.nvim]], false)
 -- Config for: lspsaga.nvim
 time([[Config for lspsaga.nvim]], true)
 require('Plugins.Config.lspsaga')
 time([[Config for lspsaga.nvim]], false)
+-- Config for: vim-startify
+time([[Config for vim-startify]], true)
+require('Plugins.Config.startify')
+time([[Config for vim-startify]], false)
+-- Config for: telescope.nvim
+time([[Config for telescope.nvim]], true)
+require('Plugins.Config.telescope')
+time([[Config for telescope.nvim]], false)
+-- Config for: shade.nvim
+time([[Config for shade.nvim]], true)
+require'Plugins.Config.shade'
+time([[Config for shade.nvim]], false)
 -- Config for: nvim-cmp
 time([[Config for nvim-cmp]], true)
 require('Plugins.Config.nvim-cmp')
 time([[Config for nvim-cmp]], false)
--- Config for: Comment.nvim
-time([[Config for Comment.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
-time([[Config for Comment.nvim]], false)
--- Config for: nvim-lspconfig
-time([[Config for nvim-lspconfig]], true)
-require('Plugins.Config.lspconfig')
-time([[Config for nvim-lspconfig]], false)
+-- Config for: bufferline.nvim
+time([[Config for bufferline.nvim]], true)
+require('Plugins.Config.bufferline')
+time([[Config for bufferline.nvim]], false)
 -- Config for: vim-vsnip
 time([[Config for vim-vsnip]], true)
 
@@ -320,33 +314,29 @@ time([[Config for vim-vsnip]], false)
 time([[Config for nvim-colorizer.lua]], true)
 require('Plugins.Config.colorizer')
 time([[Config for nvim-colorizer.lua]], false)
--- Config for: vim-startify
-time([[Config for vim-startify]], true)
-require('Plugins.Config.startify')
-time([[Config for vim-startify]], false)
--- Config for: nvim-lsp-installer
-time([[Config for nvim-lsp-installer]], true)
-require('Plugins.Config.nvim-lsp-installer')
-time([[Config for nvim-lsp-installer]], false)
--- Config for: lspkind-nvim
-time([[Config for lspkind-nvim]], true)
-require('Plugins.Config.lspkind')
-time([[Config for lspkind-nvim]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+require'Plugins.Config.lualine'
+time([[Config for lualine.nvim]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
-pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file FormatWrite lua require("packer.load")({'formatter.nvim'}, { cmd = "FormatWrite", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
-pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Format lua require("packer.load")({'formatter.nvim'}, { cmd = "Format", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
-pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file StartupTime lua require("packer.load")({'startuptime.vim'}, { cmd = "StartupTime", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 pcall(vim.cmd, [[au CmdUndefined colorscheme pinkmare ++once lua require"packer.load"({'pinkmare'}, {}, _G.packer_plugins)]])
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file NvimTreeToggle lua require("packer.load")({'nvim-tree.lua'}, { cmd = "NvimTreeToggle", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
+pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file StartupTime lua require("packer.load")({'startuptime.vim'}, { cmd = "StartupTime", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
+pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file FormatWrite lua require("packer.load")({'formatter.nvim'}, { cmd = "FormatWrite", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
+pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Format lua require("packer.load")({'formatter.nvim'}, { cmd = "Format", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 time([[Defining lazy-load commands]], false)
 
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads
 time([[Defining lazy-load event autocommands]], true)
-vim.cmd [[au BufRead * ++once lua require("packer.load")({'indent-blankline.nvim', 'nvim-treesitter'}, { event = "BufRead *" }, _G.packer_plugins)]]
+vim.cmd [[au BufRead * ++once lua require("packer.load")({'nvim-treesitter', 'indent-blankline.nvim'}, { event = "BufRead *" }, _G.packer_plugins)]]
 time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")
 if should_profile then save_profiles() end

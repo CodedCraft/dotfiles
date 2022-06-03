@@ -28,7 +28,7 @@
     export TERM='xterm-256color'
     export PATH="/usr/local/sbin:$PATH"
     export LANG=en_US.UTF-8
-    export LESSHISTFILE="$XDG_STATE_HOME"/less/history
+    export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
     # export PATH="/usr/local/opt/llvm/bin:$PATH"
 
 # Application Exports ------------------------------------------------------------------------------
@@ -43,7 +43,7 @@
     export PATH="/Users/philip/.cargo/bin/:$PATH"
     export YOTTA=$HOME/.config/yotta
     export CARGO_HOME="$HOME/.config/cargo"
-#    export RUSTUP_HOME="$HOME/.config/rustup"
+    export RUSTUP_HOME="$HOME/.config/rustup"
 ##    . "$HOME/.config/cargo/env"
     export PYENV_ROOT="$HOME/.config/pyenv"
     command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
@@ -104,3 +104,4 @@ export GNUARMEMB_TOOLCHAIN_PATH="/usr/local/"
 export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"
 
 export DISABLE_AUTO_TITLE='true'
+. "/Users/philip/.config/cargo/env"

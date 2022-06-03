@@ -1,4 +1,4 @@
-# Automatically load scripting additions on restart
+sudo yabai --load-sa
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 
 # Basic layout configurations
@@ -23,7 +23,7 @@ yabai -m config active_window_border_color 0xffffffff
 yabai -m config normal_window_border_color 0xff555555
 
 yabai -m config top_padding 5
-yabai -m config bottom_padding 5
+yabai -m config bottom_padding 40
 yabai -m config left_padding 5
 yabai -m config right_padding 5
 yabai -m config window_gap 5
@@ -33,12 +33,13 @@ yabai -m config window_gap 5
 # # Yabai Rules
 yabai -m rule --add app="^System Preferences$"  manage=off border=off
 # yabai -m rule --add app="^Velocidrone.app$"  manage=off border=off
-yabai -m rule --add app="^launcher$"  manage=off border=off
+yabai -m rule --add app="^launcher$" manage=off border=off
 # yabai -m rule --add app="GK6+" manage=off layer=above
 # yabai -m rule --add app="The Unarchiver" manage=off layer=above
 # yabai -m rule --add app="Finder" manage=off #layer=above
 yabai -m rule --add app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off
 yabai -m rule --add app="^Keyboard Setup Assistant$"  manage=off border=off
+yabai -m rule --add app="^The Unarchiver$"  manage=off border=off
 
 # # Assign Apps to Spaces
 yabai -m rule --add app="^(Brave Browser|Mail|Google Chrome|Safari)$" space=1

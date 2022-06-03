@@ -43,14 +43,30 @@ return packer.startup(function(use)
 
         use "wbthomason/packer.nvim" -- Have packer manage itself
         -- Language Server Related Plugins
-		use {
-            "neovim/nvim-lspconfig",
-            config = [[require('Plugins.Config.lspconfig')]]
-        }
-        use {
-            'williamboman/nvim-lsp-installer',
-            config= [[require('Plugins.Config.nvim-lsp-installer')]],
-        }
+        -- use {
+        --     "williamboman/nvim-lsp-installer",
+        --     {
+        --         "neovim/nvim-lspconfig",
+        --         config = function()
+        --             require("nvim-lsp-installer").setup {}
+        --             local lspconfig = require("lspconfig")
+        --             lspconfig.sumneko_lua.setup {}
+        --         end
+        --     }
+        -- }
+use {
+    "williamboman/nvim-lsp-installer",
+    "neovim/nvim-lspconfig",
+}
+		-- use {
+  --           "neovim/nvim-lspconfig",
+  --           config = [[require('Plugins.Config.lspconfig')]]
+  --       }
+  --       use {
+  --           'williamboman/nvim-lsp-installer',
+  --           config= [[require('Plugins.Config.nvim-lsp-installer')]],
+  --       }
+
 		use {
             "nvim-treesitter/nvim-treesitter",
             event = "BufRead",
