@@ -20,9 +20,9 @@
 # Default Apps -------------------------------------------------------------------------------------
     export VISUAL="nvim"
     export EDITOR='nvim'
-    export TERMINAL='alacritty'
-    export BROWSER='brave'
-    export MANPAGER='nvim +Man!'
+    export TERMINAL='Kitty'
+    # export BROWSER='Brave Browser'
+    # export MANPAGER='nvim +Man!'
 
 # General ------------------------------------------------------------------------------------------
     export TERM='xterm-256color'
@@ -35,7 +35,7 @@
     if [ -d "$HOME/Applications/platform-tools" ] ; then
      export PATH="$HOME/Applications/platform-tools:$PATH"
     fi
-    export gnuPGHOME=$HOME/.config/gnupg
+    export GNUPGHOME=$HOME/.config/gnupg
 
     export PATH="/usr/local/opt/llvm/bin:$PATH"
     export PASSWORD_STORE_DIR=$HOME/.config/password-store
@@ -54,6 +54,7 @@
 
     export npm_config_cache=$HOME/.cache/npm-cache
     export COMPDUMPFILE=$HOME/.cache/zsh-dump
+    export HOMEBREW_BUNDLE_FILE=$HOME/.config/brewfile
 
 # FZF ------------------------------------------------------------------------------------------
     # export FZF_DEFAULT_COMMAND="fd . --hidden $HOME"

@@ -38,22 +38,30 @@ sketchybar --default updates=when_shown                    \
 # https://felixkratz.github.io/SketchyBar/config/components#space----associate-mission-control-spaces-with-an-item
 # to indicate active and available mission control spaces
 
-sketchybar --add space code left                              \
-           --set code associated_display=1                    \
+sketchybar --add space web left                              \
+           --set web  associated_display=1                    \
                       associated_space=1                      \
                       icon.font="VictorMono Nerd Font:Bold:20.0"    \
-                      icon=                                  \
+                      icon=ﰍ                                  \
                       icon.highlight_color=0xff48aa2a         \
-                      label=code                              \
+                      label=web                               \
                       click_script="yabai -m space --focus 1" \
                                                               \
-           --add space tex left                               \
-           --set tex  associated_display=1                    \
+           --add space code left                               \
+           --set code  associated_display=1                    \
                       associated_space=2                      \
-                      icon=                                  \
+                      icon=                                  \
                       icon.highlight_color=0xfffab402         \
-                      label=tex                               \
-                      click_script="yabai -m space --focus 2"
+                      label=code                               \
+                      click_script="yabai -m space --focus 2" \
+                                                              \
+           --add space cad left                               \
+           --set cad  associated_display=1                    \
+                      associated_space=3                      \
+                      icon=                                  \
+                      icon.highlight_color=0xfffab402         \
+                      label=CAD                               \
+                      click_script="yabai -m space --focus 3" 
 
 ##### Adding Left Items #####
 # We add some regular items to the left side of the bar
