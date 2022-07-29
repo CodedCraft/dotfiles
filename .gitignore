@@ -1,1 +1,5 @@
 .zsh_history
+kitty.conf.bak
+current-theme.conf
+zsh/.config/zsh/.zcompcache
+zsh/.config/zsh/.zcompdump
