@@ -10,14 +10,12 @@
 # General --------------------------------------------------------------------------------------
     # alias pwgen='pwgen -1cnsy 20 | pbcopy && echo "Generated Password and copied to clipboard"'
     alias wt="curl wttr.in/Bernhardzell"
-    alias zs='source $HOME/.config/zsh/.zshrc'
-    alias v='nvim'
-    alias vim='nvim'
-    alias J='v "$HOME/Write/Journal/journal.md" +1'
-    alias rm='rm -ri'
-    alias del='trash'
-    alias dotfiles='/usr/bin/git --git-dir=$HOME/.config/dotfiles/ --work-tree=$HOME' #Command for Git Bare Repository for dotfiles
-    alias c='clear'
+    alias zs="source $HOME/.config/zsh/.zshrc"
+    alias rm="rm -ri"
+    alias del="trash"
+    alias dotfiles="/usr/bin/git --git-dir=$HOME/.config/dotfiles/ --work-tree=$HOME" #Command for Git Bare Repository for dotfiles
+    alias c="clear"
+    alias py="python3"
 
 # Tmux -----------------------------------------------------------------------------------------
     alias t="tmux"
@@ -43,11 +41,20 @@ function ls()
     fi
 }
 export god
-# function los ()
-#     if [ "$PWD" == "/Users/philip" ]; then
-#        la
-#     else
-#        l
+
+# NEOVIM ---------------------------------------------------------------------------------------
+    alias myneo='stow --delete -d ~/Code/ NvChad -vt ~/ && \
+                 stow --delete -d ~/Code/ NewVim -vt ~/ && \
+                 stow MyNeovim -d ~/Code/ -vt ~/'
+    alias nvchad='stow --delete MyNeovim -d ~/Code/ -vt ~/ && \
+                 stow --delete NewVim -d ~/Code/ -vt ~/ && \
+                 stow NvChad -d ~/Code/ -vt ~/'
+    alias newvim='stow --delete MyNeovim -d ~/Code/ -vt ~/ &&  \
+                 stow --delete NvChad -d ~/Code/ -vt ~/ && \
+                 stow NewVim -d ~/Code/ -vt ~/'
+    alias v='nvim'
+    alias vim='nvim'
+    alias J='v "$HOME/Write/Journal/journal.md" +1'
 
 # Password Store -------------------------------------------------------------------------------
     alias pw='pass pass-fzf'
