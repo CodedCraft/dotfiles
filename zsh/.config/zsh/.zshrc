@@ -99,7 +99,7 @@
 # Tmux Settings ####################################################################################
 
     ZSH_TMUX_FIXTERM_WITH_256COLOR=true
-    if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+    if command -v tmux &> /dev/null && [[ $TERM == "xterm-kitty" ]] && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
       tmux attach || tmux new -s TMUX;
     fi
     ZSH_TMUX_AUTOSTART_ONCE=true

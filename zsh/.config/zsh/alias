@@ -52,9 +52,9 @@ export god
     alias newvim='stow --delete MyNeovim -d ~/Code/ -vt ~/ &&  \
                  stow --delete NvChad -d ~/Code/ -vt ~/ && \
                  stow NewVim -d ~/Code/ -vt ~/'
-    alias v='nvim'
+    alias v='fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim'
     alias vim='nvim'
-    alias J='v "$HOME/Write/Journal/journal.md" +1'
+    alias J='vim "$HOME/Write/Journal/journal.md" +1'
 
 # Password Store -------------------------------------------------------------------------------
     alias pw='pass pass-fzf'

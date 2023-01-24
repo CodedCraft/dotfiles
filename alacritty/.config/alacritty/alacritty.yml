@@ -168,8 +168,8 @@ fontstyles:
 
 # Selected Font:
 # font: *fantasque
-font: *iosevka
-# font: *victormono
+# font: *iosevka
+font: *victormono
 # font: *fira
 # font: *inconsolata
 

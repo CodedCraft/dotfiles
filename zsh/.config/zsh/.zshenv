@@ -22,16 +22,20 @@
     export EDITOR='nvim'
     export TERMINAL='Kitty'
     # export BROWSER='Brave Browser'
-    # export MANPAGER='nvim +Man!'
+    export MANPAGER='nvim +Man!'
 
 # General ------------------------------------------------------------------------------------------
-    export TERM='xterm-256color'
+    # export TERM="xterm-kitty"
+    # export TERM='xterm-256color'
     export PATH="/usr/local/sbin:$PATH"
     export LANG=en_US.UTF-8
     export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
+    export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
     # export PATH="/usr/local/opt/llvm/bin:$PATH"
 
 # Application Exports ------------------------------------------------------------------------------
+    # eval "kitty @ set-colors -c $XDG_CONFIG_HOME/kitty/themes/$(cat $XDG_CONFIG_HOME/nvim/lua/Config/UI/currentscheme).conf"
+    # eval "kitty @ set-colors -c /Users/philip/.config/kitty/themes/pinkmare.conf"
     if [ -d "$HOME/Applications/platform-tools" ] ; then
      export PATH="$HOME/Applications/platform-tools:$PATH"
     fi
@@ -46,8 +50,8 @@
     export RUSTUP_HOME="$HOME/.config/rustup"
 ##    . "$HOME/.config/cargo/env"
     export PYENV_ROOT="$HOME/.config/pyenv"
-    command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-    eval "$(pyenv init -)"
+    # command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+    # eval "$(pyenv init -)"
 
     # export PYENV_ROOT="$HOME/.config/pyenv"
     # export PATH="$PYENV_ROOT/bin:$PATH"
@@ -55,6 +59,15 @@
     export npm_config_cache=$HOME/.cache/npm-cache
     export COMPDUMPFILE=$HOME/.cache/zsh-dump
     export HOMEBREW_BUNDLE_FILE=$HOME/.config/brewfile
+
+
+# ESP Toolchain --------------------------------------------------------------------------------
+    export LIBCLANG_PATH="/Users/philip/.espressif/tools/xtensa-esp32-elf-clang/esp-15.0.0-20221014-x86_64-apple-darwin/esp-clang/lib"
+    export PATH=/Users/philip/.espressif/tools/riscv32-esp-elf/esp-2021r2-patch5-8_4_0/riscv32-esp-elf/bin:$PATH
+    export PATH=/Users/philip/.espressif/tools/riscv32-esp-elf/esp-2021r2-patch5-8_4_0/riscv32-esp-elf/bin:$PATH
+    export PATH=/Users/philip/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8_4_0/xtensa-esp32-elf/bin:$PATH
+    export PATH=/Users/philip/.espressif/tools/xtensa-esp32s3-elf/esp-2021r2-patch5-8_4_0/xtensa-esp32s3-elf/bin:$PATH
+    export PATH=/Users/philip/.espressif/tools/xtensa-esp32s2-elf/esp-2021r2-patch5-8_4_0/xtensa-esp32s2-elf/bin:$PATH
 
 # FZF ------------------------------------------------------------------------------------------
     # export FZF_DEFAULT_COMMAND="fd . --hidden $HOME"
@@ -92,6 +105,9 @@ export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
 
 export PATH=$PATH:$HOME/esp/xtensa-lx106-elf/bin
 export IDF_PATH=$HOME/esp/ESP8266_RTOS_SDK
+
+# Algorithms Course (can be deleted afterwards) -----------------------------------------------
+export CLASSPATH=$CLASSPATH:~/Code/Learn/Alogrithms/algs4.jar
 
 # Nordic NRF Connect SDK Toolchain ------------------------------------------------------------
 

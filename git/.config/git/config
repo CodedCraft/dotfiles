@@ -22,3 +22,8 @@
 	template = /Users/philip/.config/git/gitMessage.txt
 [help]
 	autoCorrect = 30
+[credential]
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true

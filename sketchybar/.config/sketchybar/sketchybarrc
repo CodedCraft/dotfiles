@@ -1,7 +1,3 @@
-# This is a demo config to bring across some of the most important commands more easily.
-# This is meant to be changed and configured, as it is intentionally kept sparse.
-# For a more advanced configuration example see https://github.com/FelixKratz/SketchyBar/discussions/47#discussioncomment-2027233
-
 ##### Bar Appearance #####
 # Configuring the general appearance of the bar, these are only some of the
 # options available. For all options see:
@@ -61,7 +57,15 @@ sketchybar --add space web left                              \
                       icon=                                  \
                       icon.highlight_color=0xfffab402         \
                       label=CAD                               \
-                      click_script="yabai -m space --focus 3" 
+                      click_script="yabai -m space --focus 3"
+
+           --add space draw left                               \
+           --set draw  associated_display=1                    \
+                      associated_space=4                      \
+                      icon=󰽉                                 \
+                      icon.highlight_color=0xfffab402         \
+                      label=Draw                               \
+                      click_script="yabai -m space --focus 4"
 
 ##### Adding Left Items #####
 # We add some regular items to the left side of the bar
