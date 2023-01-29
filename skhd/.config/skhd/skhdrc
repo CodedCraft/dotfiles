@@ -18,6 +18,7 @@ hyper - p : /Applications/Firefox.app/Contents/MacOS/firefox --new-tab https://w
 hyper - g : /Applications/Firefox.app/Contents/MacOS/firefox --new-tab https://www.github.com
 hyper - m : /Applications/Firefox.app/Contents/MacOS/firefox --new-tab https://music.youtube.com/
 hyper - y : /Applications/Firefox.app/Contents/MacOS/firefox --new-tab https://www.youtube.com/
+hyper - d : /Applications/Firefox.app/Contents/MacOS/firefox --new-tab https://www.discord.com/app
 hyper - c : /Users/philip/.config/skhd/onshape_launcher.sh
 hyper - v : open -a "/Applications/Velocidrone.app/"
 hyper - b : open -a "/Applications/Blender.app/"
