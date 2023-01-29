@@ -63,6 +63,13 @@ export god
     alias gs='git status'
     alias gc='git add -A; git commit -m'
 
+# Leetcode -------------------------------------------------------------------------------------
+    alias lcl='leetcode list -q eDL -r 0 200'
+    alias lcp='leetcode pick'
+    alias lce='leetcode edit'
+    alias lct='leetcode test'
+    alias lcx='leetcode exec'
+
 # Zoxide ------------------------------------------------------------------------------------------
     alias j='z'
     alias jd='z Downloads'
