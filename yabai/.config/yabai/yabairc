@@ -50,6 +50,8 @@ yabai -m rule --add title="Pomodoro" manage=off sticky=on layer=above border=off
 #yabai -m rule --add title="Inkscape" title="^Document" manage=off border=off
 yabai -m rule --add app="Inkscape" manage=off border=off
 yabai -m rule --add app="Inkscape" title=".* - Inkscape" manage=on border=on
+yabai -m rule --add app="GIMP" manage=off border=off
+yabai -m rule --add app="Inkscape" title=".* - GIMP" manage=on border=on
 
 
 # Assign Apps to Spaces
